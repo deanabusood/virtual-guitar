@@ -5,6 +5,6 @@ Complete with the following: a sample button panel linked to different .wav guit
 
 # images
 
-<img src="images/launchdemo.png"> <img src="images/playerdemo.png" width = "500">
+<img src="images/launchdemo.png"> <img src="images/playerdemo.png" width = "600">
 
 
