@@ -6,6 +6,9 @@ Complete with the following: welcoming page, sample button panel linked to diffe
 
 ## project-images 🖼️
 
-<img src="images/launchdemo.png"> <img src="images/playerdemo.png">
+<p align = "center">
+  <img src="images/launchdemo.png"> 
+  <img src="images/playerdemo.png">
+</p>
 
 
