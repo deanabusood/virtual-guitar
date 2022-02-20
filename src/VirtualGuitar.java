@@ -27,6 +27,7 @@ import javax.swing.JTextField;
 import javax.swing.SwingConstants;
 
 
+
 @SuppressWarnings("serial")
 public class VirtualGuitar extends JFrame{
 	private final String[] guitarChords = { ".//res//audio//am7.wav", ".//res//audio//e7.wav", ".//res//audio//c7.wav",".//res//audio//f7.wav" };
@@ -444,8 +445,7 @@ public class VirtualGuitar extends JFrame{
 				JOptionPane.showMessageDialog(mainPanel, "Please remove any presets before proceeding", "Warning", JOptionPane.WARNING_MESSAGE);
 					
 				} else {
-					File file = new File(".//res//user_created_files");
-					purgeDirectory(file);
+					deleteDirectory();
 				}
 			}
 			
@@ -467,10 +467,10 @@ public class VirtualGuitar extends JFrame{
 		/*
 		 * if user doesn't want to save the audio files to their computer 
 		 */
-		void purgeDirectory(File dir) {
-		    for (File file: dir.listFiles()) {
-		        if (file.isDirectory())
-		            purgeDirectory(file);
+		void deleteDirectory() {
+			File directory = new File(".//res//user_created_files");
+
+			for (File file: directory.listFiles()) {
 		        file.delete();
 		    }
 		}
